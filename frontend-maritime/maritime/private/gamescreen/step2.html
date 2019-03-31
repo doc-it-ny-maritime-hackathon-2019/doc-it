@@ -1,0 +1,81 @@
+<h2>Shipment Info</h2>
+<form id="shipInfo">
+    <div class="row" style="height:100%">
+        <div class="col-6">
+            <div class="form-group">
+                <label for="owner">Owner/Agent</label>
+                <input type="text" class="form-control" id="owner">
+            </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3">
+            <div class="form-group">
+                <label for="departureDate">Departure Date</label>
+                <input type="date" class="form-control" id="departureDate">
+            </div>
+            <div class="form-group"> <label for="arrivalDate">Arrival Date</label>
+                <input type="date" class="form-control" id="arrivalDate">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label for="PoLoading">Port of Loading</label>
+                <select class="form-control" id="PoLoading">
+                    <option>Port of Santos</option>
+                    <option>Hong Kong</option>
+                    <option>Los Angeles</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="PoDischarge">Port of Discharge</label>
+                <select class="form-control" id="PoDischarge">
+                    <option>Port of Santos</option>
+                    <option>Hong Kong</option>
+                    <option>Los Angeles</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <fieldset class="form-group">
+                <label>Types of Goods</label>
+                <div>
+                    <label class="form-check-label">
+                        <input id="dangerous" class="form-check-input" type="checkbox" value=""
+                            onclick="showhide('dangerous','dangerType')">
+                        Dangerous Goods
+                        <select class="form-control" id="dangerType" style="display:none">
+                            <option></option>
+                            <option>Biological</option>
+                            <option>Chemical</option>
+                            <option>Explosive</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label class="form-check-label">
+                        <input id="agriculture" class="form-check-input" type="checkbox" value=""
+                            onclick="showhide('agriculture','agriType')">
+                        Agricultural Goods
+                        <select class="form-control" id="agriType" style="display:none">
+                            <option></option>
+                            <option>Animal Products</option>
+                            <option>Plants</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label class="form-check-label">
+                        <input id="military" class="form-check-input" type="checkbox" value="">
+                        Military
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-5"></div>
+        <div class="col-1">
+            <label id="saved" style="opacity: 0">Saved!</label>
+            <button id="submit" type="button" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+</form>
