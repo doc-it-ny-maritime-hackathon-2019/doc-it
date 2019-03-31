@@ -37,12 +37,13 @@ def draw_boxes(image_name, json_file):
         bool: True when done
     """
 
-    with open(json_file, 'r') as ocr_json:
+    with open(os.path.join(json_file), 'r') as ocr_json:
         json_info = json.load(ocr_json)
 
     acceptable_categories = [
         "PRO #", "Consignee Zip", "Trailer Nbr"]
 
+    print(json_info)
     bounding_boxes = [x['bounds'] for x in json_info['documents']
                       [0]['results'][0]['data'] if x['name'] in acceptable_categories]
     # bounding_boxes = list(filter(
@@ -50,7 +51,7 @@ def draw_boxes(image_name, json_file):
 
     # bounding_boxes = list(map(lambda x: x['bounds'],))
     print(bounding_boxes)
-    im = Image.open(f'{image_name}.jpg')
+    im = Image.open(os.path.join(f'{image_name}.jpg'))
     draw = ImageDraw.Draw(im)
 
     for box in bounding_boxes:
@@ -72,20 +73,20 @@ def draw_boxes(image_name, json_file):
         draw.line((bottom_right, top_left), fill=(255, 0, 0, 125), width=5)
 
     del draw
-    im.save(f'{image_name}_boxes.jpg', "JPEG")
-    print(f'Saved {image_name}_boxes.jpg')
+    im.save(f'{image_name}.jpg', "JPEG")
+    print(f'Saved {image_name}.jpg')
 
 
 def check_for_new_files(existing_file_pairs):
     """Example function with types documented in the docstring.
     Args:
-        existing_file_pairs (list(string)): file names json/pdf pairs in 
+        existing_file_pairs (list(string)): file names json/pdf pairs in
         current directory.
     Returns:
         bool: If new file found, returns true.
     """
-    all_pdfs = {pdf for pdf in glob.glob("*.pdf")}
-    all_jsons = {json_file for json_file in glob.glob("*.json")}
+    all_pdfs = {pdf for pdf in glob.glob("documents/*.pdf")}
+    all_jsons = {json_file for json_file in glob.glob("documents/*.json")}
     all_file_pairs = set()
 
     for pdf in all_pdfs:

@@ -1,0 +1,249 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require("../app");
+var debug = require("debug")("socketapp:server");
+var http = require("http");
+var fs = require("fs");
+var SocketIOFile = require("socket.io-file");
+var pdfdata = require("pdfdata")("test_RiHRtXV7L2SVnU6DMlbWFsst");
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+var port = normalizePort(process.env.PORT || "3000");
+app.set("port", port);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+var io = require("socket.io")(server);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+server.listen(port);
+server.on("error", onError);
+server.on("listening", onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== "listen") {
+    throw error;
+  }
+
+  var bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case "EACCES":
+      console.error(bind + " requires elevated privileges");
+      process.exit(1);
+      break;
+    case "EADDRINUSE":
+      console.error(bind + " is already in use");
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
+  debug("Listening on " + bind);
+}
+
+//SocketIO
+var gameClient;
+var genID;
+var gameState = "lobby";
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+io.on("connection", function(socket) {
+  if (gameState === "lobby") {
+    socket.on("gameClient connect", function() {
+      gameClient = socket.id;
+      console.log("Game Client Connected: " + socket.id);
+      genID = getRandomInt(999999);
+      socket.emit("init", genID);
+    });
+  }
+
+  socket.on("disconnect", function() {
+    console.log("User Disconnected");
+    if (socket.id === gameClient) {
+      playerList = [];
+      gamePhase = 1;
+      console.log("Game Closed");
+    }
+  });
+
+  socket.on("getPage", function(msg) {
+    if (msg === "step3") {
+      try {
+        fs.accessSync("../shipments/" + genID + ".json", fs.F_OK);
+      } catch (e) {
+        msg = "step3f";
+        console.log(e);
+      }
+    }
+
+    fs.readFile(
+      "../maritime/private/gamescreen/" + msg + ".html",
+      "utf8",
+      function(err, data) {
+        if (err) {
+          console.log(err);
+        }
+        socket.emit("load", data);
+      }
+    );
+
+    if (msg === "step4") {
+      let documents = [
+        "bol",
+        "mbol",
+        "invoice",
+        "danger",
+        "USCustom",
+        "brazilex"
+      ];
+      let fields = [
+        "Remit COD Address",
+        "PRO #",
+        "Consignee Zip",
+        "Trailer Nbr"
+      ];
+      for (let i = 0; i < 1; i++) {
+        fs.readFile("../documents/bol.json", "utf8", function(err, data) {
+          if (err) {
+            socket.emit("docMissing", documents[i]);
+          } else {
+            var obj = JSON.parse(data);
+            console.log(obj);
+            console.log(obj.documents[0].results[0].data.length);
+            for (let j = 0; j < obj.documents[0].results[0].data.length; j++) {
+              if (obj.documents[0].results[0].data[j].value === null) {
+                for (let k = 0; k < fields.length; k++) {
+                  if (obj.documents[0].results[0].data[j].name === fields[k]) {
+                    socket.emit(
+                      "itemMissing",
+                      documents[i],
+                      obj.documents[0].results[0].data[j].name
+                    );
+                  }
+                }
+              }
+            }
+          }
+        });
+      }
+    }
+  });
+
+  socket.on("saveData", function(msg) {
+    fs.writeFile("../shipments/" + genID + ".json", msg, function(err) {
+      if (err) {
+        return console.log(err);
+      }
+    });
+  });
+
+  socket.on("Upload", function(msg) {});
+
+  let uploader = new SocketIOFile(socket, {
+    // uploadDir: {			// multiple directories
+    // 	music: 'data/music',
+    // 	document: 'data/document'
+    // },
+    // uploadDir: 'C:/Users/siyangqiu/OneDrive/Git Projects/SocketApp/SocketApp/documents/', // simple directory
+    uploadDir: "/Users/reibs/Documents/doc-it/documents", // simple directory
+    accepts: ["application/pdf", "application/x-pdf"], // chrome and some of browsers checking mp3 as 'audio/mp3', not 'audio/mpeg'
+    maxFileSize: 4194304, // 4 MB. default is undefined(no limit)
+    chunkSize: 10240, // default is 10240(1KB)
+    transmissionDelay: 0, // delay of each transmission, higher value saves more cpu resources, lower upload speed. default is 0(no delay)
+    overwrite: true // overwrite file if exists, default is true.
+  });
+
+  uploader.on("start", fileInfo => {
+    console.log("Start uploading");
+    console.log(fileInfo);
+  });
+  uploader.on("stream", fileInfo => {
+    console.log(`${fileInfo.wrote} / ${fileInfo.size} byte(s)`);
+  });
+  uploader.on("complete", fileInfo => {
+    console.log("Upload Complete.");
+    console.log(fileInfo);
+    fs.rename(
+      "/Users/reibs/Documents/doc-it/documents/" + fileInfo.name,
+      "/Users/reibs/Documents/doc-it/documents/bol.pdf",
+      function(err) {
+        if (err) throw err;
+        console.log("Move complete.");
+      }
+    );
+    setTimeout(() => {
+      pdfdata.procs
+        .configure()
+        .withFiles(["../documents/bol.pdf"])
+        .operation({
+          op: "interactive-form"
+        })
+        .start()
+        .then(function(response) {
+          let output = JSON.stringify(response);
+          fs.writeFile("../documents/bol.json", output, function(err) {
+            if (err) {
+              return console.log(err);
+            }
+          });
+        });
+    }, 100);
+  });
+  uploader.on("error", err => {
+    console.log("Error!", err);
+  });
+  uploader.on("abort", fileInfo => {
+    console.log("Aborted: ", fileInfo);
+  });
+});

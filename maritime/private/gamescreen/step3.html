@@ -1,0 +1,65 @@
+<h2>Upload Documents</h2>
+<form id="shipInfo">
+    <div class="row" style="height:100%">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Bill of Lading</h4>
+                    <input type="file" class="form-control-file" id="bol">
+                    <br>
+                    <p class="card-text">Mandatory for all shipments</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Master Bill of Lading</h4>
+                    <input type="file" class="form-control-file" id="mbol">
+                    <br>
+                    <p class="card-text">*Optional: provides higher verified consistency
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Commercial Invoice</h4>
+                    <input type="file" class="form-control-file" id="invoice">
+                    <br>
+                    <p class="card-text">Mandatory for all shipments</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Dangerous Goods</h4>
+                    <input type="file" class="form-control-file" id="danger"">
+                    <br>
+                    <p class=" card-text">Dangerous goods were specificed in Shipment Info</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class=" card">
+                <div class="card-body">
+                    <h4 class="card-title">U.S. Customs form</h4>
+                    <input type="file" class="form-control-file" id="USCustom">
+                    <br>
+                    <p class=" card-text">Port of Discharge is in the US</p>
+                </div>
+            </div>
+            <div class=" card">
+                <div class="card-body">
+                    <h4 class="card-title">Brazil Export Certificate</h4>
+                    <input type="file" class="form-control-file" id="brazilex">
+                    <br>
+                    <p class=" card-text">Port of Loading is in Brazil</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-1">
+            <label id="saved" style="opacity: 0">Saved!</label>
+            <button id="submit" type="button" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+
+</form>
