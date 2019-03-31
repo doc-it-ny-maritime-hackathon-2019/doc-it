@@ -1,0 +1,677 @@
+{
+  "type": "proc",
+  "id": "proc_169d2492727",
+  "created": "2019-03-31T05:46:43Z",
+  "source_tags": [],
+  "operations": [
+    {
+      "op": "interactive-form"
+    }
+  ],
+  "documents": [
+    {
+      "type": "doc",
+      "id": "doc_221b5a254fe937771a2a00126ad33f7fa54bdc81",
+      "filename": "New-Penn-bill_of_lading-Fillable-5_17_18.pdf",
+      "tags": ["toolkit", "acquired:2019-03-31"],
+      "created": "2019-03-31T05:46:43Z",
+      "expires": "2019-04-30T05:46:43Z",
+      "pagecount": 1,
+      "results": [
+        {
+          "op": "interactive-form",
+          "data": [
+            {
+              "name": "KINDS OF PACKAGING DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS SUB TO CORRRow6",
+              "value": null,
+              "bounds": [145.32, 383.76, 469.44, 400.92],
+              "pagenum": 0,
+              "ui_name": "KINDS OF PACKAGING, DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS (SUB. TO CORR.)_Row_6",
+              "fieldtype": "text"
+            },
+            {
+              "name": "KINDS OF PACKAGING DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS SUB TO CORRRow5",
+              "value": null,
+              "bounds": [145.32, 402.24, 469.44, 417.96],
+              "pagenum": 0,
+              "ui_name": "KINDS OF PACKAGING, DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS (SUB. TO CORR.)_Row_5",
+              "fieldtype": "text"
+            },
+            {
+              "name": "COLLECT COD",
+              "value": "/On",
+              "bounds": [247.44, 306.36, 262.44, 319.92],
+              "checked": false,
+              "pagenum": 0,
+              "ui_name": "COLLECT",
+              "fieldtype": "checkbox"
+            },
+            {
+              "name": "KINDS OF PACKAGING DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS SUB TO CORRRow4",
+              "value": null,
+              "bounds": [145.32, 419.28, 469.44, 436.2],
+              "pagenum": 0,
+              "ui_name": "KINDS OF PACKAGING, DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS (SUB. TO CORR.)_Row_4",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Consignee Street 2",
+              "value": null,
+              "bounds": [19.32, 636, 300.96, 653.76],
+              "pagenum": 0,
+              "ui_name": "ADDRESS",
+              "fieldtype": "text"
+            },
+            {
+              "name": "KINDS OF PACKAGING DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS SUB TO CORRRow3",
+              "value": null,
+              "bounds": [145.32, 437.52, 469.44, 454.68],
+              "pagenum": 0,
+              "ui_name": "KINDS OF PACKAGING, DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS (SUB. TO CORR.)_Row_3",
+              "fieldtype": "text"
+            },
+            {
+              "name": "KINDS OF PACKAGING DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS SUB TO CORRRow2",
+              "value": null,
+              "bounds": [145.32, 456, 469.44, 473.16],
+              "pagenum": 0,
+              "ui_name": "KINDS OF PACKAGING, DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS (SUB. TO CORR.)_Row_2",
+              "fieldtype": "text"
+            },
+            {
+              "name": "KINDS OF PACKAGING DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS SUB TO CORRRow1",
+              "value": null,
+              "bounds": [145.32, 474.48, 469.44, 491.64],
+              "pagenum": 0,
+              "ui_name": "KINDS OF PACKAGING, DESCRIPTION OF ARTICLES SPECIAL MARKS AND EXCEPTIONS (SUB. TO CORR.)_Row_1",
+              "fieldtype": "text"
+            },
+            {
+              "name": "WEIGHT LBS SUB TO CORRRow1",
+              "value": null,
+              "bounds": [471.24, 474.48, 536.16, 491.64],
+              "pagenum": 0,
+              "ui_name": "WEIGHT (LBS.) (SUB. TO CORR.)_Row_1",
+              "fieldtype": "text"
+            },
+            {
+              "name": "DRUMS",
+              "value": null,
+              "bounds": [242.88, 2.39999, 306.6, 14.76],
+              "pagenum": 0,
+              "ui_name": "DRUMS",
+              "fieldtype": "text"
+            },
+            {
+              "name": "WEIGHT LBS SUB TO CORRRow2",
+              "value": null,
+              "bounds": [471.24, 456, 536.16, 473.16],
+              "pagenum": 0,
+              "ui_name": "WEIGHT (LBS.) (SUB. TO CORR.)_Row_2",
+              "fieldtype": "text"
+            },
+            {
+              "name": "WEIGHT LBS SUB TO CORRRow3",
+              "value": null,
+              "bounds": [471.24, 437.52, 536.16, 454.68],
+              "pagenum": 0,
+              "ui_name": "WEIGHT (LBS.) (SUB. TO CORR.)_Row_3",
+              "fieldtype": "text"
+            },
+            {
+              "name": "REMIT COD CHECK TO NAME",
+              "value": null,
+              "bounds": [453.36, 343.92, 598.44, 365.28],
+              "pagenum": 0,
+              "ui_name": "REMIT C.O.D. CHECK TO: NAME:",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Shipper Street",
+              "value": null,
+              "bounds": [302.76, 650.16, 598.56, 667.2],
+              "pagenum": 0,
+              "ui_name": "Shipper Street",
+              "fieldtype": "text"
+            },
+            {
+              "name": "BOL Creator",
+              "value": null,
+              "bounds": [416.16, 695.52, 598.44, 716.88],
+              "pagenum": 0,
+              "ui_name": "BOL Creator",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Date_2",
+              "value": null,
+              "bounds": [288.48, 130.08, 396.36, 143.52],
+              "pagenum": 0,
+              "ui_name": "Date",
+              "fieldtype": "text"
+            },
+            {
+              "name": "FEE COD Co Check",
+              "value": null,
+              "bounds": [347.88, 335.52, 360.48, 345.72],
+              "pagenum": 0,
+              "ui_name": "FEE COD Company Check",
+              "fieldtype": "text"
+            },
+            {
+              "name": "per",
+              "value": null,
+              "bounds": [131.28, 274.56, 239.4, 288],
+              "pagenum": 0,
+              "ui_name": "per",
+              "fieldtype": "text"
+            },
+            {
+              "name": "COD STREET",
+              "value": null,
+              "bounds": [367.68, 324.24, 598.68, 337.08],
+              "pagenum": 0,
+              "ui_name": "COD STREET",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Nbr Pkg",
+              "value": null,
+              "bounds": [502.56, 145.68, 553.8, 159.12],
+              "pagenum": 0,
+              "ui_name": "Nbr Pkg",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Delivery Date",
+              "value": null,
+              "bounds": [446.848, 26.985, 596.848, 48.985],
+              "pagenum": 0,
+              "fieldtype": "text"
+            },
+            {
+              "name": "Consignee Street",
+              "value": null,
+              "bounds": [19.32, 658.56, 300.96, 676.56],
+              "pagenum": 0,
+              "ui_name": "STREET",
+              "fieldtype": "text"
+            },
+            {
+              "name": "CONSIGNEES REFERENCEPO NO",
+              "value": null,
+              "bounds": [104.28, 592.08, 300.96, 608.4],
+              "pagenum": 0,
+              "ui_name": "CONSIGNEE'S REFERENCE/PO NO.",
+              "fieldtype": "text"
+            },
+            {
+              "name": "PREPAID COD",
+              "value": "/On",
+              "bounds": [247.44, 328.92, 262.44, 343.92],
+              "checked": false,
+              "pagenum": 0,
+              "ui_name": "PREPAID",
+              "fieldtype": "checkbox"
+            },
+            {
+              "name": "QuoteID",
+              "value": null,
+              "bounds": [18.9279, 21.0468, 172.639, 87.212],
+              "pagenum": 0,
+              "ui_name": "QuoteID",
+              "fieldtype": "text"
+            },
+            {
+              "name": "CONSIGNEE Phone",
+              "value": null,
+              "bounds": [19.32, 592.08, 102.48, 608.4],
+              "pagenum": 0,
+              "ui_name": "CONSIGNEE Phone",
+              "fieldtype": "text"
+            },
+            {
+              "name": "LOOSE",
+              "value": null,
+              "bounds": [376.32, 2.39999, 442.68, 14.76],
+              "pagenum": 0,
+              "ui_name": "LOOSE",
+              "fieldtype": "text"
+            },
+            {
+              "name": "SHIPPERS BILL OF LADING NO",
+              "value": null,
+              "bounds": [302.76, 604.8, 598.56, 621.84],
+              "pagenum": 0,
+              "ui_name": "SHIPPER'S BILL OF LADING NO:",
+              "fieldtype": "text"
+            },
+            {
+              "name": "DATE",
+              "value": null,
+              "bounds": [515.16, 718.32, 598.56, 735.12],
+              "pagenum": 0,
+              "ui_name": "DATE",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Contract",
+              "value": null,
+              "bounds": [465.84, 97.44, 593.64, 110.88],
+              "pagenum": 0,
+              "ui_name": "Contract",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Hazmat Emergency Response Telephone Number",
+              "value": null,
+              "bounds": [329.76, 114.48, 443.4, 126.36],
+              "pagenum": 0,
+              "ui_name": "Hazmat Emergency Response Telephone Number",
+              "fieldtype": "text"
+            },
+            {
+              "name": "TPTY ZIP",
+              "value": null,
+              "bounds": [210.6, 514.08, 300.96, 531.12],
+              "pagenum": 0,
+              "ui_name": "ZIP + 4",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Consignee Name",
+              "value": null,
+              "bounds": [18.9452, 681.36, 300.585, 699.12],
+              "pagenum": 0,
+              "ui_name": "NAME",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NP",
+              "value": null,
+              "bounds": [515.16, 740.88, 598.56, 757.92],
+              "pagenum": 0,
+              "ui_name": "N.P",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Consignee Zip",
+              "value": null,
+              "bounds": [210.6, 613.2, 300.96, 631.2],
+              "pagenum": 0,
+              "ui_name": "Consignee Zip",
+              "fieldtype": "text"
+            },
+            {
+              "name": "signature",
+              "value": null,
+              "bounds": [443.04, 522.72, 593.64, 536.16],
+              "pagenum": 0,
+              "ui_name": "undefined",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Trailer Nbr",
+              "value": null,
+              "bounds": [439.92, 130.08, 554.04, 143.52],
+              "pagenum": 0,
+              "ui_name": "Trailer Nbt",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Driver",
+              "value": null,
+              "bounds": [300, 145.68, 454.68, 159.12],
+              "pagenum": 0,
+              "ui_name": "Driver",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Registered Company",
+              "value": null,
+              "bounds": [154.8, 97.44, 380.76, 110.88],
+              "pagenum": 0,
+              "ui_name": "Registered Company",
+              "fieldtype": "text"
+            },
+            {
+              "name": "COD Amount",
+              "value": null,
+              "bounds": [46.08, 308.64, 188.04, 322.08],
+              "pagenum": 0,
+              "ui_name": "COD Amount",
+              "fieldtype": "text"
+            },
+            {
+              "name": "TPTY Name",
+              "value": null,
+              "bounds": [18.48, 559.44, 300.96, 576.48],
+              "pagenum": 0,
+              "ui_name": "NAME",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NMFC CLASS FOR INFO ONLYRow2",
+              "value": null,
+              "bounds": [537.96, 456, 598.56, 473.16],
+              "pagenum": 0,
+              "ui_name": "NMFC CLASS (FOR INFO. ONLY)_Row_2",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NMFC CLASS FOR INFO ONLYRow1",
+              "value": null,
+              "bounds": [537.96, 474.48, 598.56, 491.64],
+              "pagenum": 0,
+              "ui_name": "NMFC CLASS (FOR INFO. ONLY)_Row_1",
+              "fieldtype": "text"
+            },
+            {
+              "name": " HMRow1",
+              "value": null,
+              "bounds": [115.08, 474.48, 143.52, 491.64],
+              "pagenum": 0,
+              "ui_name": "* HM_Row_1",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NMFC CLASS FOR INFO ONLYRow4",
+              "value": null,
+              "bounds": [537.96, 419.28, 598.56, 436.2],
+              "pagenum": 0,
+              "ui_name": "NMFC CLASS (FOR INFO. ONLY)_Row_4",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Excess Liability",
+              "value": null,
+              "bounds": [292.8, 240.48, 378.12, 252.48],
+              "pagenum": 0,
+              "ui_name": "Excess Liability",
+              "fieldtype": "text"
+            },
+            {
+              "name": " HMRow2",
+              "value": null,
+              "bounds": [115.08, 456, 143.52, 473.16],
+              "pagenum": 0,
+              "ui_name": "* HM_Row_2",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NMFC CLASS FOR INFO ONLYRow3",
+              "value": null,
+              "bounds": [537.96, 437.52, 598.56, 454.68],
+              "pagenum": 0,
+              "ui_name": "NMFC CLASS (FOR INFO. ONLY)_Row_3",
+              "fieldtype": "text"
+            },
+            {
+              "name": " HMRow3",
+              "value": null,
+              "bounds": [115.08, 437.52, 143.52, 454.68],
+              "pagenum": 0,
+              "ui_name": "* HM_Row_3",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NMFC CLASS FOR INFO ONLYRow6",
+              "value": null,
+              "bounds": [537.96, 383.76, 598.56, 400.92],
+              "pagenum": 0,
+              "ui_name": "NMFC CLASS (FOR INFO. ONLY)_Row_6",
+              "fieldtype": "text"
+            },
+            {
+              "name": " HMRow4",
+              "value": null,
+              "bounds": [115.08, 419.28, 143.52, 436.2],
+              "pagenum": 0,
+              "ui_name": "* HM_Row_4",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NMFC CLASS FOR INFO ONLYRow5",
+              "value": null,
+              "bounds": [537.96, 402.24, 598.56, 417.96],
+              "pagenum": 0,
+              "ui_name": "NMFC CLASS (FOR INFO. ONLY)_Row_5",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Guar Svc",
+              "value": null,
+              "bounds": [446.477, 58.1605, 596.477, 80.1605],
+              "pagenum": 0,
+              "ui_name": "Guar Svc",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Shipper Zip",
+              "value": null,
+              "bounds": [516.6, 627.6, 598.56, 644.4],
+              "pagenum": 0,
+              "ui_name": "ZIP + 4",
+              "fieldtype": "text"
+            },
+            {
+              "name": "TPTY CITY STATE",
+              "value": null,
+              "bounds": [18.48, 514.08, 208.8, 531.12],
+              "pagenum": 0,
+              "ui_name": "DESTINATION - CITY, STATE",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Charges",
+              "value": null,
+              "bounds": [525.12, 586.32, 537.72, 599.28],
+              "pagenum": 0,
+              "ui_name": "Charges",
+              "fieldtype": "text"
+            },
+            {
+              "name": "CODCITYSTATE",
+              "value": null,
+              "bounds": [367.68, 302.88, 510.84, 317.16],
+              "pagenum": 0,
+              "ui_name": "COD City State",
+              "fieldtype": "text"
+            },
+            {
+              "name": "LONG",
+              "value": null,
+              "bounds": [308.16, 2.39999, 374.76, 14.76],
+              "pagenum": 0,
+              "ui_name": "LONG",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Close Time",
+              "value": null,
+              "bounds": [536.598, 3.97449, 593.072, 19.294],
+              "pagenum": 0,
+              "fieldtype": "text"
+            },
+            {
+              "name": "NUMBER SHIPPING UNITSRow3",
+              "value": null,
+              "bounds": [19.32, 437.52, 113.28, 454.68],
+              "pagenum": 0,
+              "ui_name": "NUMBER SHIPPING UNITS_Row_3",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NUMBER SHIPPING UNITSRow2",
+              "value": null,
+              "bounds": [19.32, 456, 113.28, 473.16],
+              "pagenum": 0,
+              "ui_name": "NUMBER SHIPPING UNITS_Row_2",
+              "fieldtype": "text"
+            },
+            {
+              "name": "DESTINATION City State",
+              "value": null,
+              "bounds": [19.32, 613.2, 208.8, 631.2],
+              "pagenum": 0,
+              "ui_name": "DESTINATION City State",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NUMBER SHIPPING UNITSRow5",
+              "value": null,
+              "bounds": [19.32, 402.24, 113.28, 417.96],
+              "pagenum": 0,
+              "ui_name": "NUMBER SHIPPING UNITS_Row_5",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NUMBER SHIPPING UNITSRow4",
+              "value": null,
+              "bounds": [19.32, 419.28, 113.28, 436.2],
+              "pagenum": 0,
+              "ui_name": "NUMBER SHIPPING UNITS_Row_4",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Declared Value Amt",
+              "value": null,
+              "bounds": [23.52, 274.56, 117.24, 288],
+              "pagenum": 0,
+              "ui_name": "Declared Value Amt",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NUMBER SHIPPING UNITSRow1",
+              "value": null,
+              "bounds": [19.32, 474.48, 113.28, 491.64],
+              "pagenum": 0,
+              "ui_name": "NUMBER SHIPPING UNITS_Row_1",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Open time",
+              "value": null,
+              "bounds": [452.044, 3.97455, 505.177, 20.7786],
+              "pagenum": 0,
+              "fieldtype": "text"
+            },
+            {
+              "name": "COD Zip",
+              "value": null,
+              "bounds": [512.4, 302.88, 598.68, 317.16],
+              "pagenum": 0,
+              "ui_name": "COD Zip",
+              "fieldtype": "text"
+            },
+            {
+              "name": " HMRow5",
+              "value": null,
+              "bounds": [115.08, 402.24, 143.52, 417.96],
+              "pagenum": 0,
+              "ui_name": "* HM_Row_5",
+              "fieldtype": "text"
+            },
+            {
+              "name": "TPTY STREET",
+              "value": null,
+              "bounds": [18.48, 536.88, 300.96, 553.92],
+              "pagenum": 0,
+              "ui_name": "STREET",
+              "fieldtype": "text"
+            },
+            {
+              "name": " HMRow6",
+              "value": null,
+              "bounds": [115.08, 383.76, 143.52, 400.92],
+              "pagenum": 0,
+              "ui_name": "* HM_Row_6",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Date",
+              "value": null,
+              "bounds": [216.24, 130.08, 270.36, 143.52],
+              "pagenum": 0,
+              "ui_name": "Date",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Shipper Name",
+              "value": null,
+              "bounds": [302.76, 672.96, 598.56, 689.76],
+              "pagenum": 0,
+              "ui_name": "Shipper Name",
+              "fieldtype": "text"
+            },
+            {
+              "name": "ORIGIN  CITY STATE",
+              "value": null,
+              "bounds": [302.76, 627.6, 514.8, 644.4],
+              "pagenum": 0,
+              "ui_name": "ORIGIN - CITY, STATE",
+              "fieldtype": "text"
+            },
+            {
+              "name": "WEIGHT LBS SUB TO CORRRow4",
+              "value": null,
+              "bounds": [471.24, 419.28, 536.16, 436.2],
+              "pagenum": 0,
+              "ui_name": "WEIGHT (LBS.) (SUB. TO CORR.)_Row_4",
+              "fieldtype": "text"
+            },
+            {
+              "name": "SKIDS",
+              "value": null,
+              "bounds": [174.96, 2.39999, 241.32, 14.76],
+              "pagenum": 0,
+              "ui_name": "SKIDS",
+              "fieldtype": "text"
+            },
+            {
+              "name": "WEIGHT LBS SUB TO CORRRow5",
+              "value": null,
+              "bounds": [471.24, 402.24, 536.16, 417.96],
+              "pagenum": 0,
+              "ui_name": "WEIGHT (LBS.) (SUB. TO CORR.)_Row_5",
+              "fieldtype": "text"
+            },
+            {
+              "name": "WEIGHT LBS SUB TO CORRRow6",
+              "value": null,
+              "bounds": [471.24, 383.76, 536.16, 400.92],
+              "pagenum": 0,
+              "ui_name": "WEIGHT (LBS.) (SUB. TO CORR.)_Row_6",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Cash or Certified",
+              "value": null,
+              "bounds": [347.88, 319.44, 360.48, 329.64],
+              "pagenum": 0,
+              "ui_name": "Cash or Certified",
+              "fieldtype": "text"
+            },
+            {
+              "name": "Per",
+              "value": null,
+              "bounds": [60.48, 130.08, 201, 143.52],
+              "pagenum": 0,
+              "ui_name": "Per",
+              "fieldtype": "text"
+            },
+            {
+              "name": "NUMBER SHIPPING UNITSRow6",
+              "value": null,
+              "bounds": [19.32, 383.76, 113.28, 400.92],
+              "pagenum": 0,
+              "ui_name": "NUMBER SHIPPING UNITS_Row_6",
+              "fieldtype": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "status": "complete"
+}
